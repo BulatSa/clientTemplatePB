@@ -1,0 +1,26 @@
+.work-sec {
+	padding-top: 40px;
+	padding-bottom: 90px;
+	background: #fbfaf9;
+	@include res(l) {
+		padding-bottom: 60px;
+	}
+	&--black {
+		background: #0c0f15;
+		.work-img {
+			background: url('../img/work-header-black.png') no-repeat top left, url('../img/work-footer-black.png') no-repeat bottom center;
+		}
+	}
+}
+.work-img {
+	padding-top: 43px;
+	padding-bottom: 20px;
+	border-radius: 15px;
+	box-shadow: 0 0 35px 0 transparentize(#000, 0.8);
+	background: url('../img/work-header-white.png') no-repeat top left, url('../img/work-footer-white.png') no-repeat bottom center;
+	img {
+		display: block;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}

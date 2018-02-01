@@ -1,0 +1,44 @@
+.header-sec {
+	background: #fbfaf9;
+	&--black {
+		background: #0c0f15;
+		.header {
+			background: url("../img/logo-pb-white.svg") no-repeat 95% 0%;
+		}
+		.header__title {
+			color: #fff;
+		}
+	}
+}
+
+.header {
+	padding-right: 270px;
+	background: url("../img/logo-pb.svg") no-repeat 95% 0%;
+	@include res(l) {
+		background-size: auto 62px;
+	}
+}
+
+.header__title {
+	max-width: 860px;
+	padding-top: 60px;
+	@include res(l) {
+		padding-top: 40px;
+	}
+	span {
+		display: block;
+		padding-bottom: 10px;
+		font-size: 15px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	p {
+		line-height: 1.2;
+		font-size: 48px;
+		font-weight: bold;
+		text-transform: uppercase;
+		@include res(l) {
+			font-size: 36px;
+		}
+	}
+}
